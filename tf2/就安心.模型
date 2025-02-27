@@ -1,172 +1,170 @@
 -------------------------------------------------------------------------------------
- encoder/BottleneckResNetBlock_0/BatchNorm_0/bias   |              (64,) |        64 
- encoder/BottleneckResNetBlock_0/BatchNorm_0/scale  |              (64,) |        64 
- encoder/BottleneckResNetBlock_0/BatchNorm_1/bias   |              (64,) |        64 
- encoder/BottleneckResNetBlock_0/BatchNorm_1/scale  |              (64,) |        64 
- encoder/BottleneckResNetBlock_0/BatchNorm_2/bias   |             (256,) |       256 
- encoder/BottleneckResNetBlock_0/BatchNorm_2/scale  |             (256,) |       256 
- encoder/BottleneckResNetBlock_0/Conv_0/kernel      |     (1, 1, 64, 64) |     4,096 
- encoder/BottleneckResNetBlock_0/Conv_1/kernel      |     (3, 3, 64, 64) |    36,864 
- encoder/BottleneckResNetBlock_0/Conv_2/kernel      |    (1, 1, 64, 256) |    16,384 
- encoder/BottleneckResNetBlock_0/conv_proj/kernel   |    (1, 1, 64, 256) |    16,384 
- encoder/BottleneckResNetBlock_0/norm_proj/bias     |             (256,) |       256 
- encoder/BottleneckResNetBlock_0/norm_proj/scale    |             (256,) |       256 
- encoder/BottleneckResNetBlock_1/BatchNorm_0/bias   |              (64,) |        64 
- encoder/BottleneckResNetBlock_1/BatchNorm_0/scale  |              (64,) |        64 
- encoder/BottleneckResNetBlock_1/BatchNorm_1/bias   |              (64,) |        64 
- encoder/BottleneckResNetBlock_1/BatchNorm_1/scale  |              (64,) |        64 
- encoder/BottleneckResNetBlock_1/BatchNorm_2/bias   |             (256,) |       256 
- encoder/BottleneckResNetBlock_1/BatchNorm_2/scale  |             (256,) |       256 
- encoder/BottleneckResNetBlock_1/Conv_0/kernel      |    (1, 1, 256, 64) |    16,384 
- encoder/BottleneckResNetBlock_1/Conv_1/kernel      |     (3, 3, 64, 64) |    36,864 
- encoder/BottleneckResNetBlock_1/Conv_2/kernel      |    (1, 1, 64, 256) |    16,384 
- encoder/BottleneckResNetBlock_10/BatchNorm_0/bias  |             (256,) |       256 
- encoder/BottleneckResNetBlock_10/BatchNorm_0/scale |             (256,) |       256 
- encoder/BottleneckResNetBlock_10/BatchNorm_1/bias  |             (256,) |       256 
- encoder/BottleneckResNetBlock_10/BatchNorm_1/scale |             (256,) |       256 
- encoder/BottleneckResNetBlock_10/BatchNorm_2/bias  |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_10/BatchNorm_2/scale |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_10/Conv_0/kernel     |  (1, 1, 1024, 256) |   262,144 
- encoder/BottleneckResNetBlock_10/Conv_1/kernel     |   (3, 3, 256, 256) |   589,824 
- encoder/BottleneckResNetBlock_10/Conv_2/kernel     |  (1, 1, 256, 1024) |   262,144 
- encoder/BottleneckResNetBlock_11/BatchNorm_0/bias  |             (256,) |       256 
- encoder/BottleneckResNetBlock_11/BatchNorm_0/scale |             (256,) |       256 
- encoder/BottleneckResNetBlock_11/BatchNorm_1/bias  |             (256,) |       256 
- encoder/BottleneckResNetBlock_11/BatchNorm_1/scale |             (256,) |       256 
- encoder/BottleneckResNetBlock_11/BatchNorm_2/bias  |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_11/BatchNorm_2/scale |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_11/Conv_0/kernel     |  (1, 1, 1024, 256) |   262,144 
- encoder/BottleneckResNetBlock_11/Conv_1/kernel     |   (3, 3, 256, 256) |   589,824 
- encoder/BottleneckResNetBlock_11/Conv_2/kernel     |  (1, 1, 256, 1024) |   262,144 
- encoder/BottleneckResNetBlock_12/BatchNorm_0/bias  |             (256,) |       256 
- encoder/BottleneckResNetBlock_12/BatchNorm_0/scale |             (256,) |       256 
- encoder/BottleneckResNetBlock_12/BatchNorm_1/bias  |             (256,) |       256 
- encoder/BottleneckResNetBlock_12/BatchNorm_1/scale |             (256,) |       256 
- encoder/BottleneckResNetBlock_12/BatchNorm_2/bias  |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_12/BatchNorm_2/scale |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_12/Conv_0/kernel     |  (1, 1, 1024, 256) |   262,144 
- encoder/BottleneckResNetBlock_12/Conv_1/kernel     |   (3, 3, 256, 256) |   589,824 
- encoder/BottleneckResNetBlock_12/Conv_2/kernel     |  (1, 1, 256, 1024) |   262,144 
- encoder/BottleneckResNetBlock_13/BatchNorm_0/bias  |             (512,) |       512 
- encoder/BottleneckResNetBlock_13/BatchNorm_0/scale |             (512,) |       512 
- encoder/BottleneckResNetBlock_13/BatchNorm_1/bias  |             (512,) |       512 
- encoder/BottleneckResNetBlock_13/BatchNorm_1/scale |             (512,) |       512 
- encoder/BottleneckResNetBlock_13/BatchNorm_2/bias  |            (2048,) |     2,048 
- encoder/BottleneckResNetBlock_13/BatchNorm_2/scale |            (2048,) |     2,048 
- encoder/BottleneckResNetBlock_13/Conv_0/kernel     |  (1, 1, 1024, 512) |   524,288 
- encoder/BottleneckResNetBlock_13/Conv_1/kernel     |   (3, 3, 512, 512) | 2,359,296 
- encoder/BottleneckResNetBlock_13/Conv_2/kernel     |  (1, 1, 512, 2048) | 1,048,576 
- encoder/BottleneckResNetBlock_13/conv_proj/kernel  | (1, 1, 1024, 2048) | 2,097,152 
- encoder/BottleneckResNetBlock_13/norm_proj/bias    |            (2048,) |     2,048 
- encoder/BottleneckResNetBlock_13/norm_proj/scale   |            (2048,) |     2,048 
- encoder/BottleneckResNetBlock_14/BatchNorm_0/bias  |             (512,) |       512 
- encoder/BottleneckResNetBlock_14/BatchNorm_0/scale |             (512,) |       512 
- encoder/BottleneckResNetBlock_14/BatchNorm_1/bias  |             (512,) |       512 
- encoder/BottleneckResNetBlock_14/BatchNorm_1/scale |             (512,) |       512 
- encoder/BottleneckResNetBlock_14/BatchNorm_2/bias  |            (2048,) |     2,048 
- encoder/BottleneckResNetBlock_14/BatchNorm_2/scale |            (2048,) |     2,048 
- encoder/BottleneckResNetBlock_14/Conv_0/kernel     |  (1, 1, 2048, 512) | 1,048,576 
- encoder/BottleneckResNetBlock_14/Conv_1/kernel     |   (3, 3, 512, 512) | 2,359,296 
- encoder/BottleneckResNetBlock_14/Conv_2/kernel     |  (1, 1, 512, 2048) | 1,048,576 
- encoder/BottleneckResNetBlock_15/BatchNorm_0/bias  |             (512,) |       512 
- encoder/BottleneckResNetBlock_15/BatchNorm_0/scale |             (512,) |       512 
- encoder/BottleneckResNetBlock_15/BatchNorm_1/bias  |             (512,) |       512 
- encoder/BottleneckResNetBlock_15/BatchNorm_1/scale |             (512,) |       512 
- encoder/BottleneckResNetBlock_15/BatchNorm_2/bias  |            (2048,) |     2,048 
- encoder/BottleneckResNetBlock_15/BatchNorm_2/scale |            (2048,) |     2,048 
- encoder/BottleneckResNetBlock_15/Conv_0/kernel     |  (1, 1, 2048, 512) | 1,048,576 
- encoder/BottleneckResNetBlock_15/Conv_1/kernel     |   (3, 3, 512, 512) | 2,359,296 
- encoder/BottleneckResNetBlock_15/Conv_2/kernel     |  (1, 1, 512, 2048) | 1,048,576 
- encoder/BottleneckResNetBlock_2/BatchNorm_0/bias   |              (64,) |        64 
- encoder/BottleneckResNetBlock_2/BatchNorm_0/scale  |              (64,) |        64 
- encoder/BottleneckResNetBlock_2/BatchNorm_1/bias   |              (64,) |        64 
- encoder/BottleneckResNetBlock_2/BatchNorm_1/scale  |              (64,) |        64 
- encoder/BottleneckResNetBlock_2/BatchNorm_2/bias   |             (256,) |       256 
- encoder/BottleneckResNetBlock_2/BatchNorm_2/scale  |             (256,) |       256 
- encoder/BottleneckResNetBlock_2/Conv_0/kernel      |    (1, 1, 256, 64) |    16,384 
- encoder/BottleneckResNetBlock_2/Conv_1/kernel      |     (3, 3, 64, 64) |    36,864 
- encoder/BottleneckResNetBlock_2/Conv_2/kernel      |    (1, 1, 64, 256) |    16,384 
- encoder/BottleneckResNetBlock_3/BatchNorm_0/bias   |             (128,) |       128 
- encoder/BottleneckResNetBlock_3/BatchNorm_0/scale  |             (128,) |       128 
- encoder/BottleneckResNetBlock_3/BatchNorm_1/bias   |             (128,) |       128 
- encoder/BottleneckResNetBlock_3/BatchNorm_1/scale  |             (128,) |       128 
- encoder/BottleneckResNetBlock_3/BatchNorm_2/bias   |             (512,) |       512 
- encoder/BottleneckResNetBlock_3/BatchNorm_2/scale  |             (512,) |       512 
- encoder/BottleneckResNetBlock_3/Conv_0/kernel      |   (1, 1, 256, 128) |    32,768 
- encoder/BottleneckResNetBlock_3/Conv_1/kernel      |   (3, 3, 128, 128) |   147,456 
- encoder/BottleneckResNetBlock_3/Conv_2/kernel      |   (1, 1, 128, 512) |    65,536 
- encoder/BottleneckResNetBlock_3/conv_proj/kernel   |   (1, 1, 256, 512) |   131,072 
- encoder/BottleneckResNetBlock_3/norm_proj/bias     |             (512,) |       512 
- encoder/BottleneckResNetBlock_3/norm_proj/scale    |             (512,) |       512 
- encoder/BottleneckResNetBlock_4/BatchNorm_0/bias   |             (128,) |       128 
- encoder/BottleneckResNetBlock_4/BatchNorm_0/scale  |             (128,) |       128 
- encoder/BottleneckResNetBlock_4/BatchNorm_1/bias   |             (128,) |       128 
- encoder/BottleneckResNetBlock_4/BatchNorm_1/scale  |             (128,) |       128 
- encoder/BottleneckResNetBlock_4/BatchNorm_2/bias   |             (512,) |       512 
- encoder/BottleneckResNetBlock_4/BatchNorm_2/scale  |             (512,) |       512 
- encoder/BottleneckResNetBlock_4/Conv_0/kernel      |   (1, 1, 512, 128) |    65,536 
- encoder/BottleneckResNetBlock_4/Conv_1/kernel      |   (3, 3, 128, 128) |   147,456 
- encoder/BottleneckResNetBlock_4/Conv_2/kernel      |   (1, 1, 128, 512) |    65,536 
- encoder/BottleneckResNetBlock_5/BatchNorm_0/bias   |             (128,) |       128 
- encoder/BottleneckResNetBlock_5/BatchNorm_0/scale  |             (128,) |       128 
- encoder/BottleneckResNetBlock_5/BatchNorm_1/bias   |             (128,) |       128 
- encoder/BottleneckResNetBlock_5/BatchNorm_1/scale  |             (128,) |       128 
- encoder/BottleneckResNetBlock_5/BatchNorm_2/bias   |             (512,) |       512 
- encoder/BottleneckResNetBlock_5/BatchNorm_2/scale  |             (512,) |       512 
- encoder/BottleneckResNetBlock_5/Conv_0/kernel      |   (1, 1, 512, 128) |    65,536 
- encoder/BottleneckResNetBlock_5/Conv_1/kernel      |   (3, 3, 128, 128) |   147,456 
- encoder/BottleneckResNetBlock_5/Conv_2/kernel      |   (1, 1, 128, 512) |    65,536 
- encoder/BottleneckResNetBlock_6/BatchNorm_0/bias   |             (128,) |       128 
- encoder/BottleneckResNetBlock_6/BatchNorm_0/scale  |             (128,) |       128 
- encoder/BottleneckResNetBlock_6/BatchNorm_1/bias   |             (128,) |       128 
- encoder/BottleneckResNetBlock_6/BatchNorm_1/scale  |             (128,) |       128 
- encoder/BottleneckResNetBlock_6/BatchNorm_2/bias   |             (512,) |       512 
- encoder/BottleneckResNetBlock_6/BatchNorm_2/scale  |             (512,) |       512 
- encoder/BottleneckResNetBlock_6/Conv_0/kernel      |   (1, 1, 512, 128) |    65,536 
- encoder/BottleneckResNetBlock_6/Conv_1/kernel      |   (3, 3, 128, 128) |   147,456 
- encoder/BottleneckResNetBlock_6/Conv_2/kernel      |   (1, 1, 128, 512) |    65,536 
- encoder/BottleneckResNetBlock_7/BatchNorm_0/bias   |             (256,) |       256 
- encoder/BottleneckResNetBlock_7/BatchNorm_0/scale  |             (256,) |       256 
- encoder/BottleneckResNetBlock_7/BatchNorm_1/bias   |             (256,) |       256 
- encoder/BottleneckResNetBlock_7/BatchNorm_1/scale  |             (256,) |       256 
- encoder/BottleneckResNetBlock_7/BatchNorm_2/bias   |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_7/BatchNorm_2/scale  |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_7/Conv_0/kernel      |   (1, 1, 512, 256) |   131,072 
- encoder/BottleneckResNetBlock_7/Conv_1/kernel      |   (3, 3, 256, 256) |   589,824 
- encoder/BottleneckResNetBlock_7/Conv_2/kernel      |  (1, 1, 256, 1024) |   262,144 
- encoder/BottleneckResNetBlock_7/conv_proj/kernel   |  (1, 1, 512, 1024) |   524,288 
- encoder/BottleneckResNetBlock_7/norm_proj/bias     |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_7/norm_proj/scale    |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_8/BatchNorm_0/bias   |             (256,) |       256 
- encoder/BottleneckResNetBlock_8/BatchNorm_0/scale  |             (256,) |       256 
- encoder/BottleneckResNetBlock_8/BatchNorm_1/bias   |             (256,) |       256 
- encoder/BottleneckResNetBlock_8/BatchNorm_1/scale  |             (256,) |       256 
- encoder/BottleneckResNetBlock_8/BatchNorm_2/bias   |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_8/BatchNorm_2/scale  |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_8/Conv_0/kernel      |  (1, 1, 1024, 256) |   262,144 
- encoder/BottleneckResNetBlock_8/Conv_1/kernel      |   (3, 3, 256, 256) |   589,824 
- encoder/BottleneckResNetBlock_8/Conv_2/kernel      |  (1, 1, 256, 1024) |   262,144 
- encoder/BottleneckResNetBlock_9/BatchNorm_0/bias   |             (256,) |       256 
- encoder/BottleneckResNetBlock_9/BatchNorm_0/scale  |             (256,) |       256 
- encoder/BottleneckResNetBlock_9/BatchNorm_1/bias   |             (256,) |       256 
- encoder/BottleneckResNetBlock_9/BatchNorm_1/scale  |             (256,) |       256 
- encoder/BottleneckResNetBlock_9/BatchNorm_2/bias   |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_9/BatchNorm_2/scale  |            (1024,) |     1,024 
- encoder/BottleneckResNetBlock_9/Conv_0/kernel      |  (1, 1, 1024, 256) |   262,144 
- encoder/BottleneckResNetBlock_9/Conv_1/kernel      |   (3, 3, 256, 256) |   589,824 
- encoder/BottleneckResNetBlock_9/Conv_2/kernel      |  (1, 1, 256, 1024) |   262,144 
- encoder/bn_init/bias                               |              (64,) |        64 
- encoder/bn_init/scale                              |              (64,) |        64 
  encoder/conv_init/kernel                           |      (7, 7, 3, 64) |     9,408 
- projection_head/layers_0/bias                      |            (2048,) |     2,048 
+ encoder/bn_init/scale                              |              (64,) |        64 
+ encoder/bn_init/bias                               |              (64,) |        64 
+ encoder/BottleneckResNetBlock_0/Conv_0/kernel      |     (1, 1, 64, 64) |     4,096 
+ encoder/BottleneckResNetBlock_0/BatchNorm_0/scale  |              (64,) |        64 
+ encoder/BottleneckResNetBlock_0/BatchNorm_0/bias   |              (64,) |        64 
+ encoder/BottleneckResNetBlock_0/Conv_1/kernel      |     (3, 3, 64, 64) |    36,864 
+ encoder/BottleneckResNetBlock_0/BatchNorm_1/scale  |              (64,) |        64 
+ encoder/BottleneckResNetBlock_0/BatchNorm_1/bias   |              (64,) |        64 
+ encoder/BottleneckResNetBlock_0/Conv_2/kernel      |    (1, 1, 64, 256) |    16,384 
+ encoder/BottleneckResNetBlock_0/BatchNorm_2/scale  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_0/BatchNorm_2/bias   |             (256,) |       256 
+ encoder/BottleneckResNetBlock_0/conv_proj/kernel   |    (1, 1, 64, 256) |    16,384 
+ encoder/BottleneckResNetBlock_0/norm_proj/scale    |             (256,) |       256 
+ encoder/BottleneckResNetBlock_0/norm_proj/bias     |             (256,) |       256 
+ encoder/BottleneckResNetBlock_1/Conv_0/kernel      |    (1, 1, 256, 64) |    16,384 
+ encoder/BottleneckResNetBlock_1/BatchNorm_0/scale  |              (64,) |        64 
+ encoder/BottleneckResNetBlock_1/BatchNorm_0/bias   |              (64,) |        64 
+ encoder/BottleneckResNetBlock_1/Conv_1/kernel      |     (3, 3, 64, 64) |    36,864 
+ encoder/BottleneckResNetBlock_1/BatchNorm_1/scale  |              (64,) |        64 
+ encoder/BottleneckResNetBlock_1/BatchNorm_1/bias   |              (64,) |        64 
+ encoder/BottleneckResNetBlock_1/Conv_2/kernel      |    (1, 1, 64, 256) |    16,384 
+ encoder/BottleneckResNetBlock_1/BatchNorm_2/scale  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_1/BatchNorm_2/bias   |             (256,) |       256 
+ encoder/BottleneckResNetBlock_2/Conv_0/kernel      |    (1, 1, 256, 64) |    16,384 
+ encoder/BottleneckResNetBlock_2/BatchNorm_0/scale  |              (64,) |        64 
+ encoder/BottleneckResNetBlock_2/BatchNorm_0/bias   |              (64,) |        64 
+ encoder/BottleneckResNetBlock_2/Conv_1/kernel      |     (3, 3, 64, 64) |    36,864 
+ encoder/BottleneckResNetBlock_2/BatchNorm_1/scale  |              (64,) |        64 
+ encoder/BottleneckResNetBlock_2/BatchNorm_1/bias   |              (64,) |        64 
+ encoder/BottleneckResNetBlock_2/Conv_2/kernel      |    (1, 1, 64, 256) |    16,384 
+ encoder/BottleneckResNetBlock_2/BatchNorm_2/scale  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_2/BatchNorm_2/bias   |             (256,) |       256 
+ encoder/BottleneckResNetBlock_3/Conv_0/kernel      |   (1, 1, 256, 128) |    32,768 
+ encoder/BottleneckResNetBlock_3/BatchNorm_0/scale  |             (128,) |       128 
+ encoder/BottleneckResNetBlock_3/BatchNorm_0/bias   |             (128,) |       128 
+ encoder/BottleneckResNetBlock_3/Conv_1/kernel      |   (3, 3, 128, 128) |   147,456 
+ encoder/BottleneckResNetBlock_3/BatchNorm_1/scale  |             (128,) |       128 
+ encoder/BottleneckResNetBlock_3/BatchNorm_1/bias   |             (128,) |       128 
+ encoder/BottleneckResNetBlock_3/Conv_2/kernel      |   (1, 1, 128, 512) |    65,536 
+ encoder/BottleneckResNetBlock_3/BatchNorm_2/scale  |             (512,) |       512 
+ encoder/BottleneckResNetBlock_3/BatchNorm_2/bias   |             (512,) |       512 
+ encoder/BottleneckResNetBlock_3/conv_proj/kernel   |   (1, 1, 256, 512) |   131,072 
+ encoder/BottleneckResNetBlock_3/norm_proj/scale    |             (512,) |       512 
+ encoder/BottleneckResNetBlock_3/norm_proj/bias     |             (512,) |       512 
+ encoder/BottleneckResNetBlock_4/Conv_0/kernel      |   (1, 1, 512, 128) |    65,536 
+ encoder/BottleneckResNetBlock_4/BatchNorm_0/scale  |             (128,) |       128 
+ encoder/BottleneckResNetBlock_4/BatchNorm_0/bias   |             (128,) |       128 
+ encoder/BottleneckResNetBlock_4/Conv_1/kernel      |   (3, 3, 128, 128) |   147,456 
+ encoder/BottleneckResNetBlock_4/BatchNorm_1/scale  |             (128,) |       128 
+ encoder/BottleneckResNetBlock_4/BatchNorm_1/bias   |             (128,) |       128 
+ encoder/BottleneckResNetBlock_4/Conv_2/kernel      |   (1, 1, 128, 512) |    65,536 
+ encoder/BottleneckResNetBlock_4/BatchNorm_2/scale  |             (512,) |       512 
+ encoder/BottleneckResNetBlock_4/BatchNorm_2/bias   |             (512,) |       512 
+ encoder/BottleneckResNetBlock_5/Conv_0/kernel      |   (1, 1, 512, 128) |    65,536 
+ encoder/BottleneckResNetBlock_5/BatchNorm_0/scale  |             (128,) |       128 
+ encoder/BottleneckResNetBlock_5/BatchNorm_0/bias   |             (128,) |       128 
+ encoder/BottleneckResNetBlock_5/Conv_1/kernel      |   (3, 3, 128, 128) |   147,456 
+ encoder/BottleneckResNetBlock_5/BatchNorm_1/scale  |             (128,) |       128 
+ encoder/BottleneckResNetBlock_5/BatchNorm_1/bias   |             (128,) |       128 
+ encoder/BottleneckResNetBlock_5/Conv_2/kernel      |   (1, 1, 128, 512) |    65,536 
+ encoder/BottleneckResNetBlock_5/BatchNorm_2/scale  |             (512,) |       512 
+ encoder/BottleneckResNetBlock_5/BatchNorm_2/bias   |             (512,) |       512 
+ encoder/BottleneckResNetBlock_6/Conv_0/kernel      |   (1, 1, 512, 128) |    65,536 
+ encoder/BottleneckResNetBlock_6/BatchNorm_0/scale  |             (128,) |       128 
+ encoder/BottleneckResNetBlock_6/BatchNorm_0/bias   |             (128,) |       128 
+ encoder/BottleneckResNetBlock_6/Conv_1/kernel      |   (3, 3, 128, 128) |   147,456 
+ encoder/BottleneckResNetBlock_6/BatchNorm_1/scale  |             (128,) |       128 
+ encoder/BottleneckResNetBlock_6/BatchNorm_1/bias   |             (128,) |       128 
+ encoder/BottleneckResNetBlock_6/Conv_2/kernel      |   (1, 1, 128, 512) |    65,536 
+ encoder/BottleneckResNetBlock_6/BatchNorm_2/scale  |             (512,) |       512 
+ encoder/BottleneckResNetBlock_6/BatchNorm_2/bias   |             (512,) |       512 
+ encoder/BottleneckResNetBlock_7/Conv_0/kernel      |   (1, 1, 512, 256) |   131,072 
+ encoder/BottleneckResNetBlock_7/BatchNorm_0/scale  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_7/BatchNorm_0/bias   |             (256,) |       256 
+ encoder/BottleneckResNetBlock_7/Conv_1/kernel      |   (3, 3, 256, 256) |   589,824 
+ encoder/BottleneckResNetBlock_7/BatchNorm_1/scale  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_7/BatchNorm_1/bias   |             (256,) |       256 
+ encoder/BottleneckResNetBlock_7/Conv_2/kernel      |  (1, 1, 256, 1024) |   262,144 
+ encoder/BottleneckResNetBlock_7/BatchNorm_2/scale  |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_7/BatchNorm_2/bias   |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_7/conv_proj/kernel   |  (1, 1, 512, 1024) |   524,288 
+ encoder/BottleneckResNetBlock_7/norm_proj/scale    |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_7/norm_proj/bias     |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_8/Conv_0/kernel      |  (1, 1, 1024, 256) |   262,144 
+ encoder/BottleneckResNetBlock_8/BatchNorm_0/scale  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_8/BatchNorm_0/bias   |             (256,) |       256 
+ encoder/BottleneckResNetBlock_8/Conv_1/kernel      |   (3, 3, 256, 256) |   589,824 
+ encoder/BottleneckResNetBlock_8/BatchNorm_1/scale  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_8/BatchNorm_1/bias   |             (256,) |       256 
+ encoder/BottleneckResNetBlock_8/Conv_2/kernel      |  (1, 1, 256, 1024) |   262,144 
+ encoder/BottleneckResNetBlock_8/BatchNorm_2/scale  |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_8/BatchNorm_2/bias   |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_9/Conv_0/kernel      |  (1, 1, 1024, 256) |   262,144 
+ encoder/BottleneckResNetBlock_9/BatchNorm_0/scale  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_9/BatchNorm_0/bias   |             (256,) |       256 
+ encoder/BottleneckResNetBlock_9/Conv_1/kernel      |   (3, 3, 256, 256) |   589,824 
+ encoder/BottleneckResNetBlock_9/BatchNorm_1/scale  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_9/BatchNorm_1/bias   |             (256,) |       256 
+ encoder/BottleneckResNetBlock_9/Conv_2/kernel      |  (1, 1, 256, 1024) |   262,144 
+ encoder/BottleneckResNetBlock_9/BatchNorm_2/scale  |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_9/BatchNorm_2/bias   |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_10/Conv_0/kernel     |  (1, 1, 1024, 256) |   262,144 
+ encoder/BottleneckResNetBlock_10/BatchNorm_0/scale |             (256,) |       256 
+ encoder/BottleneckResNetBlock_10/BatchNorm_0/bias  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_10/Conv_1/kernel     |   (3, 3, 256, 256) |   589,824 
+ encoder/BottleneckResNetBlock_10/BatchNorm_1/scale |             (256,) |       256 
+ encoder/BottleneckResNetBlock_10/BatchNorm_1/bias  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_10/Conv_2/kernel     |  (1, 1, 256, 1024) |   262,144 
+ encoder/BottleneckResNetBlock_10/BatchNorm_2/scale |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_10/BatchNorm_2/bias  |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_11/Conv_0/kernel     |  (1, 1, 1024, 256) |   262,144 
+ encoder/BottleneckResNetBlock_11/BatchNorm_0/scale |             (256,) |       256 
+ encoder/BottleneckResNetBlock_11/BatchNorm_0/bias  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_11/Conv_1/kernel     |   (3, 3, 256, 256) |   589,824 
+ encoder/BottleneckResNetBlock_11/BatchNorm_1/scale |             (256,) |       256 
+ encoder/BottleneckResNetBlock_11/BatchNorm_1/bias  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_11/Conv_2/kernel     |  (1, 1, 256, 1024) |   262,144 
+ encoder/BottleneckResNetBlock_11/BatchNorm_2/scale |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_11/BatchNorm_2/bias  |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_12/Conv_0/kernel     |  (1, 1, 1024, 256) |   262,144 
+ encoder/BottleneckResNetBlock_12/BatchNorm_0/scale |             (256,) |       256 
+ encoder/BottleneckResNetBlock_12/BatchNorm_0/bias  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_12/Conv_1/kernel     |   (3, 3, 256, 256) |   589,824 
+ encoder/BottleneckResNetBlock_12/BatchNorm_1/scale |             (256,) |       256 
+ encoder/BottleneckResNetBlock_12/BatchNorm_1/bias  |             (256,) |       256 
+ encoder/BottleneckResNetBlock_12/Conv_2/kernel     |  (1, 1, 256, 1024) |   262,144 
+ encoder/BottleneckResNetBlock_12/BatchNorm_2/scale |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_12/BatchNorm_2/bias  |            (1024,) |     1,024 
+ encoder/BottleneckResNetBlock_13/Conv_0/kernel     |  (1, 1, 1024, 512) |   524,288 
+ encoder/BottleneckResNetBlock_13/BatchNorm_0/scale |             (512,) |       512 
+ encoder/BottleneckResNetBlock_13/BatchNorm_0/bias  |             (512,) |       512 
+ encoder/BottleneckResNetBlock_13/Conv_1/kernel     |   (3, 3, 512, 512) | 2,359,296 
+ encoder/BottleneckResNetBlock_13/BatchNorm_1/scale |             (512,) |       512 
+ encoder/BottleneckResNetBlock_13/BatchNorm_1/bias  |             (512,) |       512 
+ encoder/BottleneckResNetBlock_13/Conv_2/kernel     |  (1, 1, 512, 2048) | 1,048,576 
+ encoder/BottleneckResNetBlock_13/BatchNorm_2/scale |            (2048,) |     2,048 
+ encoder/BottleneckResNetBlock_13/BatchNorm_2/bias  |            (2048,) |     2,048 
+ encoder/BottleneckResNetBlock_13/conv_proj/kernel  | (1, 1, 1024, 2048) | 2,097,152 
+ encoder/BottleneckResNetBlock_13/norm_proj/scale   |            (2048,) |     2,048 
+ encoder/BottleneckResNetBlock_13/norm_proj/bias    |            (2048,) |     2,048 
+ encoder/BottleneckResNetBlock_14/Conv_0/kernel     |  (1, 1, 2048, 512) | 1,048,576 
+ encoder/BottleneckResNetBlock_14/BatchNorm_0/scale |             (512,) |       512 
+ encoder/BottleneckResNetBlock_14/BatchNorm_0/bias  |             (512,) |       512 
+ encoder/BottleneckResNetBlock_14/Conv_1/kernel     |   (3, 3, 512, 512) | 2,359,296 
+ encoder/BottleneckResNetBlock_14/BatchNorm_1/scale |             (512,) |       512 
+ encoder/BottleneckResNetBlock_14/BatchNorm_1/bias  |             (512,) |       512 
+ encoder/BottleneckResNetBlock_14/Conv_2/kernel     |  (1, 1, 512, 2048) | 1,048,576 
+ encoder/BottleneckResNetBlock_14/BatchNorm_2/scale |            (2048,) |     2,048 
+ encoder/BottleneckResNetBlock_14/BatchNorm_2/bias  |            (2048,) |     2,048 
+ encoder/BottleneckResNetBlock_15/Conv_0/kernel     |  (1, 1, 2048, 512) | 1,048,576 
+ encoder/BottleneckResNetBlock_15/BatchNorm_0/scale |             (512,) |       512 
+ encoder/BottleneckResNetBlock_15/BatchNorm_0/bias  |             (512,) |       512 
+ encoder/BottleneckResNetBlock_15/Conv_1/kernel     |   (3, 3, 512, 512) | 2,359,296 
+ encoder/BottleneckResNetBlock_15/BatchNorm_1/scale |             (512,) |       512 
+ encoder/BottleneckResNetBlock_15/BatchNorm_1/bias  |             (512,) |       512 
+ encoder/BottleneckResNetBlock_15/Conv_2/kernel     |  (1, 1, 512, 2048) | 1,048,576 
+ encoder/BottleneckResNetBlock_15/BatchNorm_2/scale |            (2048,) |     2,048 
+ encoder/BottleneckResNetBlock_15/BatchNorm_2/bias  |            (2048,) |     2,048 
  projection_head/layers_0/kernel                    |       (2048, 2048) | 4,194,304 
- projection_head/layers_1/bias                      |            (2048,) |     2,048 
  projection_head/layers_1/scale                     |            (2048,) |     2,048 
- projection_head/layers_3/bias                      |            (2048,) |     2,048 
+ projection_head/layers_1/bias                      |            (2048,) |     2,048 
  projection_head/layers_3/kernel                    |       (2048, 2048) | 4,194,304 
- projection_head/layers_4/bias                      |            (2048,) |     2,048 
  projection_head/layers_4/scale                     |            (2048,) |     2,048 
+ projection_head/layers_4/bias                      |            (2048,) |     2,048 
  projection_head/layers_6/kernel                    |        (2048, 128) |   262,144 
  projection_head/layers_7/scale                     |             (128,) |       128 
 -------------------------------------------------------------------------------------
-Total parameters: 32,171,200
+Total parameters: 32,167,104
