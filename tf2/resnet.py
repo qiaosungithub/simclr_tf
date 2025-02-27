@@ -395,9 +395,10 @@ class BottleneckBlock(tf.keras.layers.Layer):
                **kwargs):
     super(BottleneckBlock, self).__init__(**kwargs)
     self.projection_layers = []
-    if use_projection:
+    if use_projection: # Default True
       filters_out = 4 * filters
       if FLAGS.sk_ratio > 0:  # Use ResNet-D (https://arxiv.org/abs/1812.01187)
+        raise NotImplementedError
         if strides > 1:
           self.projection_layers.append(FixedPadding(2, data_format))
         self.projection_layers.append(

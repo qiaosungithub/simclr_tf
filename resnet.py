@@ -33,6 +33,7 @@ from tensorflow.python.tpu import tpu_function  # pylint: disable=g-direct-tenso
 FLAGS = flags.FLAGS
 BATCH_NORM_EPSILON = 1e-5
 
+# import tf_keras as keras
 
 class BatchNormalization(tf.layers.BatchNormalization):
   """Batch Normalization layer that supports cross replica computation on TPU.

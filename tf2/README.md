@@ -1,3 +1,17 @@
+# Scripts to run SimCLR on TensorFlow 2.x on CPU
+
+```
+DATA_DIR=/kmh-nfs-ssd-eu-mount/code/hanhong/dot/tensorflow_datasets
+MODEL_DIR=/kmh-nfs-ssd-eu-mount/code/qiao/work/simclr_tf/tmp
+
+TF_USE_LEGACY_KERAS=1 python run.py --train_mode=pretrain \
+  --train_batch_size=4096 --train_epochs=100 --temperature=0.1 \
+  --learning_rate=0.075 --learning_rate_scaling=sqrt --weight_decay=1e-4 \
+  --dataset=cifar10 --image_size=224 --eval_split=test \
+  --model_dir=$MODEL_DIR \
+  --use_tpu=False
+```
+
 # TF2 implementation of SimCLR
 
 This implementation is based on TensorFlow 2.x. We use `tf.keras` layers for building the model and use `tf.data` for our input pipeline. The model is trained using a [custom training loop](https://www.tensorflow.org/tutorials/distribute/custom_training) with `tf.distribute` on multiple TPUs.

@@ -616,10 +616,19 @@ def main(argv):
         # mean gradient is applied.
         loss = loss / strategy.num_replicas_in_sync
         logging.info('Trainable variables:')
+        num_parameters = 0
         for var in model.trainable_variables:
-          logging.info(var.name)
+          # logging.info(var.name)
+          # print the name, shape of var
+          print(var.name, var.shape)
+          size = 1
+          for dim in var.shape:
+            size *= dim
+          num_parameters += size
+        print('Number of parameters:', num_parameters)
         grads = tape.gradient(loss, model.trainable_variables)
         optimizer.apply_gradients(zip(grads, model.trainable_variables))
+        assert False
 
     with strategy.scope():
 
