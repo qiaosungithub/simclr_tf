@@ -467,7 +467,7 @@ def main(argv):
   if len(argv) > 1:
     raise app.UsageError('Too many command-line arguments.')
 
-
+  ############################### Build dataset ###############################
   builder = tfds.builder(FLAGS.dataset, data_dir=FLAGS.data_dir)
   builder.download_and_prepare()
   num_train_examples = builder.info.splits[FLAGS.train_split].num_examples
@@ -487,6 +487,7 @@ def main(argv):
   checkpoint_steps = (
       FLAGS.checkpoint_steps or (FLAGS.checkpoint_epochs * epoch_steps))
 
+  ############################### For TPU ################################
   topology = None
   if FLAGS.use_tpu:
     if FLAGS.tpu_name:
@@ -507,10 +508,11 @@ def main(argv):
     logging.info('Running using MirroredStrategy on %d replicas',
                  strategy.num_replicas_in_sync)
 
+  ############################### Build model ###############################
   with strategy.scope():
     model = model_lib.Model(num_classes)
 
-  if FLAGS.mode == 'eval':
+  if FLAGS.mode == 'eval': # restore checkpoint
     for ckpt in tf.train.checkpoints_iterator(
         FLAGS.model_dir, min_interval_secs=15):
       result = perform_evaluation(model, builder, eval_steps, ckpt, strategy,
@@ -518,7 +520,7 @@ def main(argv):
       if result['global_step'] >= train_steps:
         logging.info('Eval complete. Exiting...')
         return
-  else:
+  else: # train
     summary_writer = tf.summary.create_file_writer(FLAGS.model_dir)
     with strategy.scope():
       # Build input pipeline.

@@ -234,9 +234,9 @@ class Model(tf.keras.models.Model):
         resnet_depth=FLAGS.resnet_depth,
         width_multiplier=FLAGS.width_multiplier,
         cifar_stem=FLAGS.image_size <= 32)
-    self._projection_head = ProjectionHead()
+    self._projection_head = ProjectionHead() # MLP head
     if FLAGS.train_mode == 'finetune' or FLAGS.lineareval_while_pretraining:
-      self.supervised_head = SupervisedHead(num_classes)
+      self.supervised_head = SupervisedHead(num_classes) # Linear head
 
   def __call__(self, inputs, training):
     features = inputs
