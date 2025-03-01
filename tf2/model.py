@@ -240,6 +240,7 @@ class Model(tf.keras.models.Model):
 
   def __call__(self, inputs, training):
     features = inputs
+    ### useless code
     if training and FLAGS.train_mode == 'pretrain':
       if FLAGS.fine_tune_after_block > -1:
         raise ValueError('Does not support layer freezing during pretraining,'
@@ -247,12 +248,15 @@ class Model(tf.keras.models.Model):
     if inputs.shape[3] is None:
       raise ValueError('The input channels dimension must be statically known '
                        f'(got input shape {inputs.shape})')
-    num_transforms = inputs.shape[3] // 3
+    ### end useless
+
+    ### split the views from dataset
+    num_transforms = inputs.shape[3] // 3 # it seems that multiple views are concatenated along the channel dimension
     num_transforms = tf.repeat(3, num_transforms)
     # Split channels, and optionally apply extra batched augmentation.
     features_list = tf.split(
         features, num_or_size_splits=num_transforms, axis=-1)
-    if FLAGS.use_blur and training and FLAGS.train_mode == 'pretrain':
+    if FLAGS.use_blur and training and FLAGS.train_mode == 'pretrain': # don't know why blur is seperated
       features_list = data_util.batch_random_blur(features_list,
                                                   FLAGS.image_size,
                                                   FLAGS.image_size)
@@ -277,4 +281,4 @@ class Model(tf.keras.models.Model):
           tf.stop_gradient(supervised_head_inputs), training)
       return projection_head_outputs, supervised_head_outputs
     else:
-      return projection_head_outputs, None
+      return projection_head_outputs, None # when training

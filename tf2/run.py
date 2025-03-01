@@ -512,6 +512,19 @@ def main(argv):
   with strategy.scope():
     model = model_lib.Model(num_classes)
 
+  # print parameters
+  logging.info('Trainable variables:')
+  num_parameters = 0
+  for var in model.trainable_variables:
+    # logging.info(var.name)
+    # print the name, shape of var
+    print(var.name, var.shape)
+    size = 1
+    for dim in var.shape:
+      size *= dim
+    num_parameters += size
+  print('Number of parameters:', num_parameters)
+
   if FLAGS.mode == 'eval': # restore checkpoint
     for ckpt in tf.train.checkpoints_iterator(
         FLAGS.model_dir, min_interval_secs=15):
@@ -557,6 +570,9 @@ def main(argv):
     steps_per_loop = checkpoint_steps
 
     def single_step(features, labels):
+      """
+      features: the image, 知道为什么叫这个名字
+      """
       with tf.GradientTape() as tape:
         # Log summaries on the last step of the training loop to match
         # logging frequency of other scalar summaries.
@@ -576,10 +592,11 @@ def main(argv):
           # Only log augmented images for the first tower.
           tf.summary.image(
               'image', features[:, :, :, :3], step=optimizer.iterations + 1)
+        # forward model
         projection_head_outputs, supervised_head_outputs = model(
             features, training=True)
         loss = None
-        if projection_head_outputs is not None:
+        if projection_head_outputs is not None: # calculate contrastive loss according to the projection head outputs
           outputs = projection_head_outputs
           con_loss, logits_con, labels_con = obj_lib.add_contrastive_loss(
               outputs,
@@ -595,7 +612,7 @@ def main(argv):
                                                 contrast_entropy_metric,
                                                 con_loss, logits_con,
                                                 labels_con)
-        if supervised_head_outputs is not None:
+        if supervised_head_outputs is not None: # train linear head
           outputs = supervised_head_outputs
           l = labels['labels']
           if FLAGS.train_mode == 'pretrain' and FLAGS.lineareval_while_pretraining:
@@ -617,20 +634,9 @@ def main(argv):
         # replicas so we divide the loss by the number of replicas so that the
         # mean gradient is applied.
         loss = loss / strategy.num_replicas_in_sync
-        logging.info('Trainable variables:')
-        num_parameters = 0
-        for var in model.trainable_variables:
-          # logging.info(var.name)
-          # print the name, shape of var
-          print(var.name, var.shape)
-          size = 1
-          for dim in var.shape:
-            size *= dim
-          num_parameters += size
-        print('Number of parameters:', num_parameters)
+        
         grads = tape.gradient(loss, model.trainable_variables)
         optimizer.apply_gradients(zip(grads, model.trainable_variables))
-        assert False
 
     with strategy.scope():
 
